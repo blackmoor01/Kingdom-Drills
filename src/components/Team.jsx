@@ -2,6 +2,7 @@ import React from "react";
 
 const Team = () =>{
 
+    //Function  for displaying dynamically the Team's pictures, Name and Position respectively.
     const OurTeam = () => {
         const data = [
             {

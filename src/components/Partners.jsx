@@ -1,6 +1,7 @@
 import React from "react";
 
 const Partners = () => {
+
     const PartnershipCompanies = () => {
         const data = [
             { "Image": require("../assets/Citibank.png") },

@@ -32,7 +32,7 @@ const NavBar = () => {
                         TEAM</Link>
                 </nav>
 
-                {/* Mobile Menu */}
+
                 <div className="md:hidden">
                     {/* You can implement your mobile menu here */}
                 </div>
