@@ -1,8 +1,10 @@
 import React from "react";
 
+
 const Partners = () => {
 
     const PartnershipCompanies = () => {
+
         const data = [
             { "Image": require("../assets/Citibank.png") },
             { "Image": require("../assets/Multibanco.png") },
@@ -14,11 +16,11 @@ const Partners = () => {
         ];
 
         return (
-            <div className="flex flex-wrap justify-center mt-10">
+            <div className="flex md:flex-wrap soace-x-4 md:space-x-20 justify-center mt-10">
                 {data.map((item, index) => (
                     <div key={index} className="m-2">
-                        <div className="h-20 w-20 rounded-full bg-gray-200 flex items-center justify-center cursor-pointer hover:scale-110">
-                            <img src={item.Image} className="h-15 w-15" alt={`Partner Logo ${index}`} />
+                        <div className="h-auto w-full md:w-20 md:h-20  rounded-full bg-gray-200 flex items-center justify-center cursor-pointer hover:scale-110">
+                            <img src={item.Image} className="h-auto w-full" alt={`Partner Logo ${index}`} />
                         </div>
                     </div>
                 ))}

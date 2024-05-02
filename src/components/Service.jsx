@@ -1,93 +1,68 @@
 import React from "react";
-import { FaBinoculars, FaBolt, FaWater, FaWrench } from "react-icons/fa";
+import {FaBinoculars, FaBolt, FaWater, FaWrench} from "react-icons/fa";
 
 const Services = () => {
 
-    {/*Function for show-casing the services we render */}
     const OurServices = () => {
-        const data = [
-            {
-                "Txt": "Borehole drilling",
-                "Icon": <FaBolt className="text-8xl mx-auto" />
-            },
-            {
-                "Txt": "Pump installation",
-                "Icon": <FaWrench className="text-8xl mx-auto" />
-            },
-            {
-                "Txt": "Water treatment",
-                "Icon": <FaWater className="text-8xl mx-auto" />
-            },
-            {
-                "Txt": "Hydrological surveying",
-                "Icon": <FaBinoculars className="text-8xl mx-auto" />
-            }
-        ];
+        const data = [{
+            "Txt": "Borehole drilling", "Icon": <FaBolt className="text-8xl mx-auto"/>
+        }, {
+            "Txt": "Pump installation", "Icon": <FaWrench className="text-8xl mx-auto"/>
+        }, {
+            "Txt": "Water treatment", "Icon": <FaWater className="text-8xl mx-auto"/>
+        }, {
+            "Txt": "Hydrological surveying", "Icon": <FaBinoculars className="text-8xl mx-auto"/>
+        }];
 
-        return (
-            <div className="flex justify-between space-x-4 cursor-pointer">
-                {data.map((item, index) => (
-                    <div
+        return (<div className="flex justify-between space-x-4 cursor-pointer">
+                {data.map((item, index) => (<div
                         className="flex flex-col items-center justify-center"
                         key={index}
                     >
-                        <div className="flex border border-[#4682B4] rounded-lg bg-white shadow-2xl hover:scale-110 p-4 h-72 w-72 justify-center items-center text-center">
+                        <div
+                            className="flex border border-[#4682B4] rounded-lg bg-white shadow-2xl hover:scale-110 p-4 h-auto w-auto md:h-72 md:w-72 justify-center items-center text-center">
                             {item.Icon}
                         </div>
-                        <div className="mt-2 font-bold">{item.Txt}</div>
-                    </div>
-                ))}
-            </div>
-        );
+                        <div className="mt-2 font-bold flex text-xs">{item.Txt}</div>
+                    </div>))}
+            </div>);
     };
 
     const Ratings = () => {
-        const data = [
-            {
-                "Numbers": "800+",
-                "Text": "Boreholes Drilled"
-            },
-            {
-                "Numbers": "900+",
-                "Text": "Services Rendered"
-            },
-            {
-                "Numbers": "1500+",
-                "Text": "Happy Clients"
-            },
-            {
-                "Numbers": "10+",
-                "Text": "Years of Experience"
-            }
-        ]
-        return (
-            <div className={"flex-row flex space-x-5 md:space-x-36"}>
-                {data.map((item, index) => (
-                    <div className={"flex flex-col items-center justify-center cursor-pointer hover:scale-110"} key={index}>
-                        <div className={"text-4xl md:text-5xl text-[#8B4513] font-bold"}>{item.Numbers}</div>
-                        <div className={"mt-2 text-white font-medium text-lg md:text-xl"}>{item.Text}</div>
-                    </div>
-                ))}
-            </div>
-        )
+        const data = [{
+            "Numbers": "800+", "Text": "Boreholes Drilled"
+        }, {
+            "Numbers": "900+", "Text": "Services Rendered"
+        }, {
+            "Numbers": "1500+", "Text": "Happy Clients"
+        }, {
+            "Numbers": "10+", "Text": "Years of Experience"
+        }]
+        return (<div className={"flex-row flex md:flex-wrap  justify-center items-center md:space-x-40"}>
+                {data.map((item, index) => (<div
+                        className={"flex flex-col md:space-x-2 space-x-2 mt-10 md:w-12 md:flex-col md:h-12 md:mx-auto items-center justify-center cursor-pointer hover:scale-110"}
+                        key={index}>
+                        <div className={"text-lg  md:text-5xl text-[#8B4513] font-bold flex"}>{item.Numbers}</div>
+                        <div className={"mt-2 text-white font-medium text-xs md:text-xl flex"}>{item.Text}</div>
+                    </div>))}
+            </div>)
     };
 
 
-    return (
-        <div name={"what-we-do"} className={"mx-10 md:mx-20 mt-20"}>
+    return (<div name={"what-we-do"} className={"mx-10 md:mx-20 mt-20"}>
             <h1 className={"text-4xl font-bold"}>What We Do</h1>
             <p className={"text-2xl font-medium py-5 px-1 mb-5"}>We offer the following services</p>
 
             <div className={""}>
-                <OurServices />
+                <OurServices/>
             </div>
 
             <div className="mt-28 flex flex-col items-center justify-center relative">
                 <img src={require("../assets/Rectangle 7.png")} alt="Display for the numeration"
-                     className="w-full h-auto rounded-lg" />
+                     className="w-full h-auto rounded-lg"/>
 
                 <div className="absolute inset-0 -mt-14 flex items-center justify-center flex-col mx-5 md:mx-20">
-                    <Ratings />
+                    <Ratings/>
                 </div>
             </div>
 
@@ -100,8 +75,7 @@ const Services = () => {
             </div>
 
 
-        </div>
-    )
+        </div>)
 };
 
 export default Services;

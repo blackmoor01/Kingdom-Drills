@@ -35,11 +35,11 @@ const Team = () =>{
                         key={index}
                     >
                         <div className=" flex border-1 rounded-lg bg-white shadow-2xl hover:scale-110
-                         p-4 w-72 h-72 md:w-full md:h-auto justify-center items-center text-center">
+                         p-4 w-full h-auto justify-center items-center text-center">
                             <img src={item.Image} alt={`Logo ${index}`} className="w-full h-auto"/>
                         </div>
-                        <div className="mt-2 font-bold">{item.Name}</div>
-                        <div className={"mt-2 font-bold"}>{item.Position}</div>
+                        <div className="mt-2 font-bold text-sm">{item.Name}</div>
+                        <div className={"mt-2 font-bold text-sm"}>{item.Position}</div>
 
                     </div>
                 ))}

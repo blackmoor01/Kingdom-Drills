@@ -2,7 +2,7 @@ import React from "react";
 
 const Gallery = () => {
 
-    {/*Function for the display of the Gallery image cards*/}
+
     const GalleryCards = () => {
         const data = [
             {
@@ -23,7 +23,7 @@ const Gallery = () => {
             <div className="flex justify-between space-x-4 cursor-pointer">
                 {data.map((item, index) => (
                     <div className="flex border-[#4682B4] rounded-lg bg-white shadow-2xl hover:scale-110 p-4 justify-center items-center text-center" key={index}>
-                        <img src={item.Image} alt={`Image ${index}`} className="w-full h-auto" />
+                        <img src={item.Image} alt={`Pic ${index}`} className="w-full h-auto" />
                     </div>
                 ))}
             </div>
@@ -36,7 +36,7 @@ const Gallery = () => {
             <h1 className={"text-4xl font-bold"}>Our Gallery</h1>
             <p className={"text-2xl font-medium py-5 px-1 mb-5"}>Pictures from our previous projects</p>
 
-            <div className={""}>
+            <div>
                 <GalleryCards/>
             </div>
         </div>
