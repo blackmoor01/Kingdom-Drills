@@ -2,7 +2,6 @@ import React from "react";
 
 const Charity = () =>{
 
-    {/*Function for the display of the Charity image cards*/}
     const CharityGallery = () => {
         const data = [
             {
@@ -25,7 +24,7 @@ const Charity = () =>{
                     <div
                         className="flex border-[#4682B4] rounded-lg bg-white shadow-2xl hover:scale-110 p-4 justify-center items-center text-center"
                         key={index}>
-                        <img src={item.Image} alt={`Image ${index}`} className="w-full h-auto"/>
+                        <img src={item.Image} alt={`Pic ${index}`} className="w-full h-auto"/>
                     </div>
                 ))}
             </div>

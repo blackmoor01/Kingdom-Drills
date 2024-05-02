@@ -3,7 +3,6 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaInstagramSquare } from "react-icon
 import { Link } from "react-scroll";
 
 
-{/*Footer function for displaying the base content of the landing page*/}
 const Footer = () => {
     return (
         <footer className="bg-[#4682B4] text-white py-14 mt-20">

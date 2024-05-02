@@ -22,7 +22,7 @@ const NavBar = () => {
                 </div>
 
                 {nav && (
-                    <ul className={"flex flex-col justify-center items-center  top-0 left-0 w-full h-screen bg-gradient-to-b from-[#4682B4] to-black"}>
+                    <ul className={"flex flex-col justify-center items-center  top-0 left-0 w-full h-screen bg-gradient-to-b from-[#4682B4] to-black cursor-pointer"}>
                         <Link to="home" smooth={true} duration={500}
                               className="text-gray-300 hover:bg-gray-700 hover:text-white px-2 py-4 rounded-md text-sm font-medium">HOME</Link>
                         <Link to="about" smooth={true} duration={500}
