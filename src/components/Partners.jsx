@@ -16,7 +16,7 @@ const Partners = () => {
         ];
 
         return (
-            <div className="flex md:flex-wrap soace-x-4 md:space-x-20 justify-center mt-10">
+            <div className="flex md:flex-wrap soace-x-4 md:space-x-16 md:px-10 justify-center mt-10">
                 {data.map((item, index) => (
                     <div key={index} className="m-2">
                         <div className="h-auto w-full md:w-20 md:h-20  rounded-full bg-gray-200 flex items-center justify-center cursor-pointer hover:scale-110">
