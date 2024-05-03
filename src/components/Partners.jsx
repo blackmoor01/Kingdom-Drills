@@ -29,7 +29,7 @@ const Partners = () => {
     };
 
     return (
-        <div name={"partners"} className={"mx-20 mt-20"}>
+        <div name={"partners"} className={"mx-20 py-14 md:py-32"}>
             <h1 className={"text-4xl font-bold"}>Our Partners</h1>
             <p className={"text-2xl font-medium py-5 px-1 mb-5"}>Brands that work with us</p>
 

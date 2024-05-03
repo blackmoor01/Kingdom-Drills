@@ -41,7 +41,7 @@ const Team = () =>{
                     >
                         <div className=" flex rounded-lg bg-white shadow-2xl hover:scale-110
                          p-4 w-full h-auto justify-center items-center text-center">
-                            <img src={item.Image} alt={`Team ${index}`} className="object-fill"/>
+                            <img src={item.Image} alt={`Team ${index}`} className="w-full h-auto"/>
                         </div>
                         <div className="mt-8 font-bold text-sm text-center">{item.Name}</div>
                         <div className={"mt-5 font-bold text-xs md:text-sm text-center"}>{item.Position}</div>
@@ -52,7 +52,7 @@ const Team = () =>{
         )
     }
     return (
-        <div name={"our team"} className={"mx-20 py-32"}>
+        <div name={"our team"} className={"mx-20 md:py-32 py-14"}>
             <h1 className={"text-4xl font-bold"}>Our Team</h1>
             <p className={"text-2xl font-medium py-5 px-1 mb-5"}>Meet the team</p>
 

@@ -32,7 +32,7 @@ const Charity = () =>{
     }
 
     return (
-        <div name={"charity"} className={"mx-20 py-32"}>
+        <div name={"charity"} className={"mx-20 md:py-32 py-14"}>
             <h1 className={"text-4xl font-bold"}>Charity</h1>
             <p className={"text-2xl font-medium py-5 px-1 mb-5"}>View our charity and donation made</p>
 

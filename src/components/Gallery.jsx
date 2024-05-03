@@ -32,7 +32,7 @@ const Gallery = () => {
 
 
     return(
-        <div name={"gallery"} className={"mx-20 py-32"}>
+        <div name={"gallery"} className={"mx-20 md:py-32 py-14"}>
             <h1 className={"text-4xl font-bold"}>Our Gallery</h1>
             <p className={"text-2xl font-medium py-5 px-1 mb-5"}>Pictures from our previous projects</p>
 

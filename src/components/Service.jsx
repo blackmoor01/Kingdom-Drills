@@ -36,7 +36,7 @@ const Services = () => {
                     >
                         <div className=" flex rounded-lg bg-white shadow-2xl hover:scale-110
                          p-4 w-full h-auto justify-center items-center text-center">
-                            <img src={item.Image} alt={`Team ${index}`} className="object-fill"/>
+                            <img src={item.Image} alt={`Team ${index}`} className="w-full h-auto"/>
                         </div>
                         <div className="mt-8 font-bold md:text-lg text-sm">{item.Name}</div>
 
