@@ -47,8 +47,8 @@ const NavBar = () => {
 
                 <div className="flex items-center mb-2 md:mb-0">
                     <img src={require("../assets/Drilled Well.png")} alt="Kingdom Drills Logo"
-                         className="w-8 h-8 md:w-10 md:h-10 mr-2 ml-20"/>
-                    <span className="text-lg font-bold text-white">KINGDOM DRILLS</span>
+                         className="w-8 h-8 md:w-10 md:h-10 mr-2 md:ml-20 justify-between mx-2"/>
+                    <h1 className="text-lg font-bold text-white">KINGDOM DRILLS</h1>
                 </div>
 
 

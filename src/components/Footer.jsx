@@ -44,7 +44,7 @@ const Footer = () => {
                 {/*Kingdom Drills Logo*/}
                 <div className="flex items-center justify-center mx-20 md:justify-start mb-4 md:mb-0">
                     <img src={require("../assets/Drilled Well.png")} alt="Kingdom Drills Logo" className="w-10 h-10 mr-2" />
-                    <span className="text-lg font-bold">KINGDOM DRILLS</span>
+                    <h1 className="text-lg font-bold">KINGDOM DRILLS</h1>
                 </div>
 
                 {/*Content of the navigation tab*/}
@@ -68,8 +68,8 @@ const Footer = () => {
                     <FaLinkedin className="hover:scale-110" />
                 </div>
                 <div className="flex flex-col md:flex-row mx-2 md:mx-auto space-y-4 md:space-y-0 md:space-x-16 mt-4 md:mt-0">
-                    <p className="text-lg font-medium">ADDRESS: ADENTA FILLING, ACCRA - GHANA</p>
-                    <p className="text-lg font-medium">EMAIL: info@kingdrills.com</p>
+                    <p className="text-lg font-medium">ADDRESS: ADENTA-FILLING, ACCRA - GHANA</p>
+                    <a href={"mailto:info@kingdrills.com"} className="text-lg font-medium hover:text-gray-800">EMAIL: info@kingdrills.com</a>
                     <p className="text-lg font-medium">TELEPHONE: +7805221231</p>
                 </div>
             </div>
@@ -78,12 +78,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-/*<Link to="home" smooth={true} duration={500} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">HOME</Link>
-<Link to="about" smooth={true} duration={500} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">WHO WE ARE</Link>
-<Link to="what-we-do" smooth={true} duration={500} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">WHAT WE DO</Link>
-<Link to="gallery" smooth={true} duration={500} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">GALLERY</Link>
-<Link to="charity" smooth={true} duration={500} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">CHARITY</Link>
-<Link to="partners" smooth={true} duration={500} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">PARTNERS</Link>
-<Link to="our-team" smooth={true} duration={500} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">OUR TEAM</Link>*/

@@ -30,17 +30,21 @@ const Team = () =>{
                 "Image":require("../assets/Team04.png") ,
                 "Name":"Tony Parker",
                 "Position":"(Hydro Fracture Engineer)"
+            },
+            {
+                "Image":require("../assets/Dennis Akpeko (1) (1).jpeg"),
+                "Position":"Technology Consultant"
             }
         ]
         return(
-            <div className="flex justify-between space-x-4 cursor-pointer">
+            <div className="flex flex-wrap gap-4 justify-between items-center space-x-4 cursor-pointer">
                 {data.map((item, index) => (
                     <div
                         className="flex flex-col items-center justify-center"
                         key={index}
                     >
                         <div className=" flex rounded-lg bg-white shadow-2xl hover:scale-110
-                         p-4 w-full h-auto justify-center items-center text-center">
+                         p-4 w-full h-auto justify-center items-center text-center max-w-xs">
                             <img src={item.Image} alt={`Team ${index}`} className="w-full h-auto"/>
                         </div>
                         <div className="mt-8 font-bold text-sm text-center">{item.Name}</div>
@@ -56,7 +60,7 @@ const Team = () =>{
             <h1 className={"text-4xl font-bold"}>Our Team</h1>
             <p className={"text-2xl font-medium py-5 px-1 mb-5"}>Meet the team</p>
 
-            <div className={""}>
+            <div className={"flex justify-center"}>
                 <OurTeam />
             </div>
         </div>
