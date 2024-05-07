@@ -6,6 +6,7 @@ import Charity from "./components/Charity";
 import Partners from "./components/Partners";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
+import QuoteForm from "./components/QuoteForm";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Charity/>
       <Partners/>
       <Team/>
+      <QuoteForm/>
       <Footer/>
     </div>
   );

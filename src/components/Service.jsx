@@ -76,7 +76,7 @@ const Services = () => {
 
     return (
         <div name={"what we do"} className={"mx-10 md:mx-20 md:mt-20 py-4"}>
-        <h1 className={"text-4xl font-bold"}>What We Do</h1>
+        <h1 className={"text-4xl font-bold inline border-b-4 border-gray-500"}>What We Do</h1>
         <p className={"text-2xl font-medium py-5 px-1 mb-5"}>We offer the following services</p>
 
         <div className={"flex justify-center"}>
@@ -85,7 +85,7 @@ const Services = () => {
 
         <div className="mt-28 flex flex-col items-center justify-center relative">
         <img src={require("../assets/Rectangle 7.png")} alt="Display for the numeration"
-                     className="w-full h-auto rounded-lg"/>
+                     className="w-full h-screen md:h-auto rounded-lg"/>
 
                 <div className="absolute inset-0 -mt-8 flex items-center justify-center flex-col mx-5 md:mx-20">
                     <Ratings/>

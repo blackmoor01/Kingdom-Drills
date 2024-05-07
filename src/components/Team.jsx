@@ -11,9 +11,9 @@ const Team = () =>{
                 "Position":"(Founder)"
             },
             {
-                "Image":require("../assets/Team01.png"),
-                "Name":"Adam Smith",
-                "Position":"(Co-founder)"
+                "Image":require("../assets/Dennis Akpeko (1) (1).jpeg"),
+                "Name":"Dennis Akpeko",
+                "Position":"Technology Consultant"
             },
             {
                 "Image":require("../assets/Team02.png"),
@@ -30,10 +30,6 @@ const Team = () =>{
                 "Image":require("../assets/Team04.png") ,
                 "Name":"Tony Parker",
                 "Position":"(Hydro Fracture Engineer)"
-            },
-            {
-                "Image":require("../assets/Dennis Akpeko (1) (1).jpeg"),
-                "Position":"Technology Consultant"
             }
         ]
         return(
@@ -57,7 +53,7 @@ const Team = () =>{
     }
     return (
         <div name={"our team"} className={"mx-20 md:py-32 py-14"}>
-            <h1 className={"text-4xl font-bold"}>Our Team</h1>
+            <h1 className={"text-4xl font-bold inline border-b-4 border-gray-500"}>Our Team</h1>
             <p className={"text-2xl font-medium py-5 px-1 mb-5"}>Meet the team</p>
 
             <div className={"flex justify-center"}>
