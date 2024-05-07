@@ -70,7 +70,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row mx-2 md:mx-auto space-y-4 md:space-y-0 md:space-x-16 mt-4 md:mt-0">
                     <p className="text-lg font-medium">ADDRESS: ADENTA-FILLING, ACCRA - GHANA</p>
                     <a href={"mailto:info@kingdrills.com"} className="text-lg font-medium hover:text-gray-800">EMAIL: info@kingdrills.com</a>
-                    <p className="text-lg font-medium">TELEPHONE: +7805221231</p>
+                    <p className="text-lg font-medium">TELEPHONE: +1780522104</p>
                 </div>
             </div>
         </footer>

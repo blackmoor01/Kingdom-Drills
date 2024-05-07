@@ -6,8 +6,16 @@ const Services = () => {
     const OurServices = () => {
         const data = [
             {
+                "Image":require("../assets/Hydrological surveying.jpeg") ,
+                "Name":"Geological Surveying",
+            },
+            {
                 "Image":require("../assets/Borehole.png"),
                 "Name":"Borehole Drilling",
+            },
+            {
+                "Image":require("../assets/Hydro Fracture.png") ,
+                "Name":"Hydrological Fracture",
             },
             {
                 "Image":require("../assets/Pump Installation.png"),
@@ -18,14 +26,6 @@ const Services = () => {
                 "Name":"Water Treatment",
 
             },
-            {
-                "Image":require("../assets/Hydrological surveying.jpeg") ,
-                "Name":"Hydrological Surveying",
-            },
-            {
-                "Image":require("../assets/Hydro Fracture.png") ,
-                "Name":"Hydrological Fracture",
-            }
         ]
         return(
             <div className="flex justify-center space-x-4 cursor-pointer flex-wrap gap-4 items-center">
