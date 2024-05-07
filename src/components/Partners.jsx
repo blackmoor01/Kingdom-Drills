@@ -20,7 +20,7 @@ const Partners = () => {
                 {data.map((item, index) => (
                     <div key={index} className="m-2">
                         <div className="h-auto w-full md:w-20 md:h-20  rounded-full bg-gray-200 flex items-center justify-center cursor-pointer hover:scale-110">
-                            <img src={item.Image} className="h-auto w-full" alt={`Partner Logo ${index}`} />
+                            <img src={item.Image} className="h-auto w-full md:w-auto" alt={`Partner Logo ${index}`} />
                         </div>
                     </div>
                 ))}
@@ -34,7 +34,7 @@ const Partners = () => {
             <p className={"text-2xl font-medium py-5 px-1 mb-5"}>Brands that work with us</p>
 
             <div className="mt-28 flex flex-col items-center justify-center relative">
-                <img src={require("../assets/Rectangle 7.png")} alt="Display for the numeration" className="w-full h-auto rounded-lg" />
+                <img src={require("../assets/Rectangle 7.png")} alt="Display for the numeration" className="w-full h-screen md:h-auto rounded-lg" />
                 <div className={"absolute inset-0 -mt-14 flex items-center justify-center flex-col mx-20"}>
                     <PartnershipCompanies />
                 </div>
