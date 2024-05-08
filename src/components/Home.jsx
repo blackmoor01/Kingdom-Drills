@@ -18,7 +18,7 @@ const Home = () => {
                             Drilling And Strategically Located In The Capital City Of Accra, Kingdom Drills Is Poised To
                             Enhance Its Operations, Efficiency, And Overall Business Capabilities.</p>
 
-                        <Link to={"contact"} smooth={true} duration={500}>
+                        <Link to={"mc_embed_shell"} smooth={true} duration={500}>
                             <button
                                 className="bg-transparent hover:text-white hover:bg-gray-700 text-[#4682B4] font-bold py-1 px-4 md:px-5 ml-4 md:ml-5 border border-[#4682B4] rounded-lg shadow-lg">
                                 Request A Quote

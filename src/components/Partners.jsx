@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-scroll";
 
 
 const Partners = () => {
@@ -16,9 +17,9 @@ const Partners = () => {
         ];
 
         return (
-            <div className="flex md:flex-wrap soace-x-4 md:space-x-16 md:px-10 justify-center mt-10">
+            <div className="flex flex-wrap gap-4 soace-x-4 md:space-x-16 md:px-10 justify-center mt-10">
                 {data.map((item, index) => (
-                    <div key={index} className="m-2">
+                    <div key={index} className="m-2 flex flex-col">
                         <div className="h-auto w-full md:w-20 md:h-20  rounded-full bg-gray-200 flex items-center justify-center cursor-pointer hover:scale-110">
                             <img src={item.Image} className="h-auto w-full md:w-auto" alt={`Partner Logo ${index}`} />
                         </div>
@@ -41,9 +42,12 @@ const Partners = () => {
             </div>
 
             <div className={"items-center justify-center flex"}>
-                <button className="mt-8 bg-transparent text-[#4682B4] hover:text-white hover:bg-gray-700 font-bold py-2 px-5 border border-[#4682B4] rounded-lg shadow-lg">
-                    Request A Quote
-                </button>
+                <Link to={"mc_embed_shell"} smooth={true} duration={500}>
+                    <button
+                        className=" mt-8 bg-transparent hover:text-white hover:bg-gray-700 text-[#4682B4] font-bold py-1 px-4 md:px-5 ml-4 md:ml-5 border border-[#4682B4] rounded-lg shadow-lg">
+                        Request A Quote
+                    </button>
+                </Link>
             </div>
         </div>
     );

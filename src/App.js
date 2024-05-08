@@ -10,17 +10,17 @@ import QuoteForm from "./components/QuoteForm";
 
 function App() {
   return (
-    <div className={"flex-1"}>
-      <NavBar />
-      <Home />
-      <Services/>
-      <Gallery/>
-      <Charity/>
-      <Partners/>
-      <Team/>
-      <QuoteForm/>
-      <Footer/>
-    </div>
+          <div className={"flex-1"}>
+              <NavBar/>
+              <Home/>
+              <Services/>
+              <Gallery/>
+              <Charity/>
+              <Partners/>
+              <Team/>
+              <QuoteForm/>
+              <Footer/>
+          </div>
   );
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-scroll";
 
 
 const Services = () => {
@@ -31,16 +32,14 @@ const Services = () => {
             <div className="flex justify-center space-x-4 cursor-pointer flex-wrap gap-4 items-center">
                 {data.map((item, index) => (
                     <div
-                        className="flex flex-col items-center justify-center"
+                        className="flex flex-col items-center justify-center md:space-x-full"
                         key={index}
                     >
                         <div className=" flex rounded-lg bg-white shadow-2xl hover:scale-110
-                         p-4 w-full h-auto justify-center items-center text-center max-w-xs ">
+                         p-4 md:w-full md:h-auto justify-center items-center text-center max-w-xs ">
                             <img src={item.Image} alt={`Team ${index}`} className="w-full h-auto"/>
                         </div>
                         <div className="mt-8 font-bold md:text-lg text-sm">{item.Name}</div>
-
-
                     </div>
                 ))}
             </div>
@@ -93,11 +92,12 @@ const Services = () => {
             </div>
 
             <div className={"items-center justify-center flex"}>
-                <button
-                    className="mt-8 bg-transparent text-[#4682B4] hover:text-white hover:bg-gray-700 font-bold py-2 px-5 md:px-8 border border-[#4682B4] rounded-lg shadow-lg"
-                >
-                    Request A Quote
-                </button>
+                <Link to={"mc_embed_shell"} smooth={true} duration={500}>
+                    <button
+                        className=" mt-8 bg-transparent hover:text-white hover:bg-gray-700 text-[#4682B4] font-bold py-1 px-4 md:px-5 ml-4 md:ml-5 border border-[#4682B4] rounded-lg shadow-lg">
+                        Request A Quote
+                    </button>
+                </Link>
             </div>
 
 
