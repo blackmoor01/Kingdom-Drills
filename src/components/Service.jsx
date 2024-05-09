@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-scroll";
+import {Link} from "react-router-dom";
 
 
 const Services = () => {
@@ -92,7 +92,7 @@ const Services = () => {
             </div>
 
             <div className={"items-center justify-center flex"}>
-                <Link to={"mc_embed_shell"} smooth={true} duration={500}>
+                <Link to={"/thankyou"} smooth={true} duration={500}>
                     <button
                         className=" mt-8 bg-transparent hover:text-white hover:bg-gray-700 text-[#4682B4] font-bold py-1 px-4 md:px-5 ml-4 md:ml-5 border border-[#4682B4] rounded-lg shadow-lg">
                         Request A Quote
